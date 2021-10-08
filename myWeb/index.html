@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <script>
+            var pass = "scorpio";
+            var user = "Scar";
+
+            function login_clicked(){
+                
+                if(userName.value == "" && password.value == "")
+                {
+                    alert("Please input User Name/Password");
+                }
+                else if(userName.value != "" && password.value == "")
+                { 
+                    alert("Please input Password");
+            
+                }
+                else if (userName.value == user && password.value == pass)
+                {
+                    userName.value = "";
+                    password.value = "";
+                    document.location = 'https://www.pakdaddy.com'; 
+                }
+                else
+                {
+                    alert("Wrong Credential");
+                }
+            }    
+        </script>
+        <link rel="stylesheet" href="style.css">
+        <H1 id = "center" > My Website</H1>
+        <style>
+            
+        html{
+            background: url(bg.gif) no-repeat center fixed; 
+            background-size: cover;
+        }
+            </style>
+    </head>
+
+   <body>
+        <text style = "font-size: 20px; color: purple; font-weight: bold; margin-right: 5px;">User Name</text>
+        <input style = "font-size: 20px; color: purple;" id = "userName" type = "text">  
+        </input>
+        <br><br>
+        <text style = "font-size: 20px; color: purple; margin-top: 0px; font-weight: bold; margin-right: 18px;">Password</text>
+        <input style = "font-size: 20px; color: purple; margin-right: 10px;" id = "password" type="password"></input>
+
+        <button style="width: 60px; height: 25px; color: white; background-color: purple;" onclick=login_clicked()>Login</button>
+
+        <section id = "bg" style="background-color: black; opacity: .7;">
+            
+            <p id = "font-size" >Warm Welcome!!</p>
+                <p id = "font-size">My name is Scorpio, I am front end developer</p>
+                    <p id = "font-size">Welcome to our Website</p>
+                        <p id = "font-size">This is the most amazing Website.</p>
+                             
+        </section>
+        
+        <button id = "button1" onclick = "document.location = 'register.html'">Register</button>
+        <button id = "button" onclick = "document.location = 'contact.html'">Contact Us</button>
+        
+        
+        
+
+
+        <button>PHP</button>
+        <footer id = "footer-prop" >Copyright © | All Rights Reserved. 2021</footer>
+        
+    </body>
+
+    
+    </html>
